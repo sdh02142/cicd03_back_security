@@ -11,14 +11,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 /**
 * WebMvcConfigurer 를 이용해서 @CrossOrigin 글로벌 설정
 * */
-@Configuration
-@EnableWebMvc
+//@Configuration
+//@EnableWebMvc
 public class WebMvcConfig implements WebMvcConfigurer {
   @Override
   public void addCorsMappings(CorsRegistry registry) {
      registry.addMapping("/**")
-    // .allowedOrigins("http://localhost:5173","http://localhost:4173")
-     //.allowedOrigins("http://43.200.184.113:5173", "http://43.200.184.113:4173")
+//     .allowedOrigins("http://localhost:5173","http://localhost:4173")
+//     .allowedOrigins("http://43.200.184.113:5173", "http://43.200.184.113:4173")
       .allowedOrigins("http://43.201.48.20", "http://43.201.48.20:80")
 //      .allowedOrigins("http://heejung.n-e.kr", "https://heejung.n-e.kr") // front end의 도메인까지 구했을 경우, 주석 해제.
      .allowedMethods("OPTIONS","GET","POST","PUT","DELETE");
