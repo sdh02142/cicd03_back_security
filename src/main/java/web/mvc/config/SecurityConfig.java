@@ -57,7 +57,7 @@ public class SecurityConfig {
 //                        configuration.setAllowedOrigins(Collections.singletonList("http://localhost:5173"));
 //                        configuration.setAllowedOrigins(Arrays.asList("http://localhost:5173", "http://localhost:4173"));
 //                        configuration.setAllowedOrigins(Arrays.asList("http://43.201.48.20", "http://43.201.48.20:80"));
-                        configuration.setAllowedOrigins(Arrays.asList("http://gitnyange.kro.kr", "https://gitnyange.kro.kr"));
+                        configuration.setAllowedOrigins(Arrays.asList("http://darkcircus.kro.kr", "https://darkcircus.kro.kr"));
                         configuration.setAllowedMethods(Collections.singletonList("*"));
                         configuration.setAllowCredentials(true);
 
